@@ -10,6 +10,6 @@ import java.sql.SQLException;
 public class SentenceMapper implements ResultSetMapper<Sentence> {
     @Override
     public Sentence map(int index, ResultSet r, StatementContext ctx) throws SQLException {
-        return new Sentence(r.getString("text"));
+        return new Sentence(r.getLong("id"), r.getString("text"));
     }
 }
