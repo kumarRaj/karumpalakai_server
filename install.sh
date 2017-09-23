@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -x
 
-sudo yum install postgresql96-server
+sudo yum install postgresql
 
 sudo yum install -y git
 
